@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="kuhinja/kjokken-alt.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        		
+        <title>Kjokken</title>
+</head>
+
+<body>
+    <nav class="transparent_bg">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="imgs/logo_white.png" alt=""  id="icon"></a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+              <i class="material-icons" id = "burger_menu" style="margin-left: -30px;">menu</i> <!--Burger Menu-->
+            </a>
+            <ul style = "margin-right: 1%;" class="right hide-on-med-and-down">
+              <li><a href="#" class = 'navtext'>FORSIDE</a></li>
+              <li><a href="#" class = 'navtext'>TJENESTER</a></li>
+              <li class="active"><a href="#" class = 'navtext'>INSPIRASJON</a></li> <!-- Add class = "active" for active subpage -->
+              <li><a href="#" class = 'navtext'>BOOK BEFARING</a> </li>
+              <li><a href="#" class = 'navtext'>CONTACT OSS</a></li>
+            </ul>
+         </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo" style="z-index: 9999;"> <!--Sve dole do parallaxa je menu za mobile/tablet-->
+      <li><a href="#!" class="sidenav-close" style="margin-top: 5px;"><i class="material-icons" style="color: red;">close</i></a></li>
+      <li><a href="#" class = 'navtext'>FORSIDE</a></li>
+      <li><a href="#" class = 'navtext'>TJENESTER</a></li>
+      <li class="active"><a href="#" class = 'navtext'>INSPIRASJON</a></li> <!-- Add class = "active" for active subpage -->
+      <li><a href="#" class = 'navtext'>BOOK BEFARING</a></li>
+      <li><a href="#" class = 'navtext'>CONTACT OSS</a></li>
+    </ul>
+
+    <div id="cover">
+      <div id="layer">
+          <div></div>
+          <div><span>KJØKKEN</span></div>
+          <div></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="glavno">
+      <div id="tekst">
+        <div></div>
+        <div>
+          <h3>Kjøkken</h3>
+          <p>Selma Kjøkken & Interiør er en familieeid bedrift. Sakte men sikkert har vi jobbet opp vårt konsept fra vi startet i 2002 og fram til i dag. Det at vi fortsatt anser oss som en liten bedrift gir oss også de beste forutsetninger for god oppfølging til alle våre kunder. Og det er akkurat det vi får mange tilbakemeldinger på – den beste reklamen får man jo av fornøyde kunder.</p>
+        </div>
+        <div></div>
+      </div>
+      <div><img id="velika-slika" src="kuhinja/kuhinja10.jpg"></div>
+    </div>
+
+    <div id="ostatak">
+
+      <h4>Interessert i å se mer?</h3>
+      <div id="btnSeeMore"><button onclick="SeeMore()">Se mer</button></div>
+
+<!-- Slideshow -->
+<div id="slideshow">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="kuhinja/kuhinja4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="kuhinja/kuhinja6.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="kuhinja/kuhinja7.jpeg" style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="kuhinja/kuhinja5.jpeg" style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="kuhinja/kuhinja3.jpeg" style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="kuhinja/kuhinja9.jpeg" style="width:100%;">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+</div>
+    </div>
+
+  <footer>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col s12 m12 l4 xl4 center-align">
+        <h5>SELMA KJØKKEN OG INTERIØR AS</h5>
+        <i class="material-icons prefix" style="color: red; ">navigation</i>
+        <p style="display: inline-block;">HAUGENVEIEN 5, 1430 ÅS</p><br>
+        <i class="material-icons prefix" style="color: red; ">local_phone</i>
+        <p style="display: inline-block;">64 97 85 18</p><br>
+        <i class="material-icons prefix" style="color: red; ">schedule</i>
+        <h5 style="display: inline-block;">ÅPNINGSTIDER:</h5>
+        <p>MAN - TORS: 10 - 18</p>
+        <p>FRE: 10 - 17</p>
+        <p>LØR: 10 - 14</p>
+        <br><br>
+      </div>
+      <div class="col s12 m6 l4 xl4 center-align">
+        <ul>
+          <li><a class="cool-link" href="#" style="margin-top: -15px;"><h5>KONTAKT OSS</h5></a></li>
+          <li><a class="cool-link" href="#"><h5>OM SELMA KJØKKEN</h5></a></li>
+          <li><a class="cool-link" href="#"><h5>INSPIRASJON</h5></a></li>
+        </ul>
+        <br>
+      </div>
+      <div class="col s12 m6 l4 xl4 center-align">
+          <h5 style="text-align: center; margin-bottom: 18px;">SUBSCRIBE TO OUR NEWSLETTER: </h5>
+          <div class="input-field" style="display:inline-block; width: 50%;">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_prefix" type="email" class="validate">
+              <label for="icon_prefix">EMAIL</label>
+          </div>
+          <input type="submit" value="SUBSCRIBE" class="subscribe">
+          <div class="row">
+            <div class="col s12 m7 l7 x7">
+              <p>CREATED BY: QUEUE SOLUTIONS</p>
+              <p style="margin-bottom: 30px;">&copy; ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="col s12 m5 l5 xl5">
+              <a href="" style="margin-left: 5px;"><i class="medium material-icons btnTop">arrow_upward</i></a>
+            </div>
+          </div>
+          
+          <br>
+      </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
+<script>
+    var navText = $('.navtext'); // header navbar  
+  
+    $('#prosjekter').hide(); // hiding and showing content on click 
+    $('.katalog').hide();
+    $('.link1').click(function(){
+    $('.prosjekter').show();
+    $('.katalog').hide();
+    });
+    $('.link2').click(function(){
+    $('.prosjekter').hide();
+    $('.katalog').show();
+    });
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
+    
+    $(document).ready(function(){ 
+         $(window).scroll(function(){ // scroll animation
+           if($(window).scrollTop() > 520){
+             $('nav').addClass('white'); // change nav to white bg
+             $('#icon').attr("src","imgs/logo_black.png"); // change logo to logo_black
+             $('#burger_menu').css("color","black");
+             $.each(navText, function () {
+                 navText.addClass('navtext'); // change text color in navbar
+             })
+           }else{
+             $('nav').removeClass('white'); // rollback to initial state of the navbar
+             $('#icon').attr("src","imgs/logo_white.png"); // rollback the logo
+             $('#burger_menu').css("color","white");
+             $.each(navText, function () {
+                 navText.removeClass('navtext'); // rollback the text color
+             })
+           }
+         });
+    });
+
+    /* ---------------------------------------------------------------------- */
+   /* function SeeMore(){
+    var seemore = document.getElementById("slike");
+
+    seemore.classList.add("active");
+          
+    }*/
+
+$("#btnSeeMore").click(function(){
+  $("#slideshow").show("blind");
+});
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+   
+ </script>

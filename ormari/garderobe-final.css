@@ -1,0 +1,363 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    }
+
+  
+   nav{
+    top:0;
+    position: fixed;
+    background: rgba(128, 124, 124, 0.2);
+    padding:0px 20px;
+    z-index: 9999;
+   }
+   .button{
+    width: 20%; 
+    background-color: #ef5350;
+   }
+
+  nav ul li{
+    margin-left: 10px;
+  }
+
+  .transparent_bg{
+    background-color: rgba(170, 170, 170, 0.2);
+    transition: background-color 0.5s ease-in;
+  }
+
+/*----------------------------------------------------*/
+  footer{
+    padding-top: 20px; 
+    border: 1px solid rgba(110, 110, 110, 0.3); 
+    display: block;
+    width: 100%;
+    background: #eceff1;
+    margin-top: 35px;
+  }
+  .subscribe{
+    margin-left: 10px;
+    margin-top: 1px;
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    color:rgb(30, 31, 31);;
+    padding: 12px 20px;
+  }
+  .subscribe:hover{
+    border: 1px solid red;
+    color:red;
+    transition: 0.3s ease-in;
+  }
+  /* label color */
+  .input-field label {
+    color: black !important;
+  }
+  /* label focus color */
+  .input-field input[type=email]:focus + label {
+    color: red !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* valid color */
+  .input-field input[type=email].valid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* invalid color */
+  .input-field input[type=email].invalid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: red!important;
+  }
+  .links{
+    border-bottom: 1px solid rgb(30, 31, 31);
+    transition: 0.5s ease-in;
+    color:rgb(30, 31, 31);
+    text-align: center;
+    display: inline-block;
+  }
+  .cool-link {
+    display: inline-block;
+    color: rgb(30, 31, 31);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 5px 15px 5px;
+  }
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(30, 31, 31);
+    transition: width .3s;
+}
+  .red{
+    color:red;
+  }
+  .black{
+    color: black;
+  }
+
+  .cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+  .btnTop{
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    padding: 10px 10px;
+    color: rgb(30, 31, 31);
+  }
+  .btnTop:hover{
+    border: 1px solid red;
+    color: red;
+    transition: 0.2s ease-in;
+  }
+  .brand-logo img{
+    width: 275px;
+    margin-left: -9px;
+  }
+
+  /*----------------------------------------------*/
+
+  #cover span{
+    border-radius: 20px;
+    padding: 0 10px;
+  }
+  
+  #cover{
+    margin-top: 65px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../ormari/ormari4.jpeg);
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  }
+
+  #layer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  hr{
+    margin: 20px auto;
+    width: 66%;
+  }
+
+  #glavno{
+    margin: 0 11.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #glavno h3{
+   text-align: center;
+  }
+
+  #glavno p{
+    text-align: justify;
+    font-size: 18px;
+    margin-right: 11.5px;
+  }
+
+  #glavno img{
+    width: 100%;
+  }
+
+  #slike-2 img{
+      max-height: 675px;
+  }
+
+  #btnSeeMore{
+    display: block;
+    text-align: center;
+  }
+
+  #btnSeeMore button{
+    width: 250px;
+    height: 50px;   
+    border: none;
+    border-radius: 3px;
+    background: #ef5350;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+
+  #ostatak h4{
+    padding-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #tekst{
+    display: grid;  
+    grid-template-rows: auto auto auto;
+  }
+  
+  #slike.active{
+    display: grid;
+    margin: 0 11.5px;
+    padding: 50px 0;
+    grid-template-rows: auto auto;
+    grid-gap: 0.6em;
+  }
+
+  #slike{
+    display: none;
+  }
+
+  #slike-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+  #slike img{
+    width: 100%;
+  }
+
+  #blabla img{
+    margin: 0 25%;
+    width: 50%;
+  }
+  /*-----------------------------------------------------*/
+
+  footer{
+    padding-top: 20px; 
+    border: 1px solid rgba(110, 110, 110, 0.3); 
+    display: block;
+    width: 100%;
+    background: #eceff1;
+    margin-top: 35px;
+  }
+  .subscribe{
+    margin-left: 10px;
+    margin-top: 1px;
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    color:rgb(30, 31, 31);;
+    padding: 12px 20px;
+  }
+  .subscribe:hover{
+    border: 1px solid red;
+    color:red;
+    transition: 0.3s ease-in;
+  }
+  /* label color */
+  .input-field label {
+    color: black !important;
+  }
+  /* label focus color */
+  .input-field input[type=email]:focus + label {
+    color: red !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* valid color */
+  .input-field input[type=email].valid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* invalid color */
+  .input-field input[type=email].invalid {
+    border-bottom: 1px solid red!important;
+    box-shadow: 0 1px 0 0 red!important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: red!important;
+  }
+  .links{
+    border-bottom: 1px solid rgb(30, 31, 31);
+    transition: 0.5s ease-in;
+    color:rgb(30, 31, 31);
+    text-align: center;
+    display: inline-block;
+  }
+  .cool-link {
+    display: inline-block;
+    color: rgb(30, 31, 31);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 5px 15px 5px;
+  }
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(30, 31, 31);
+    transition: width .3s;
+}
+  .red{
+    color:red;
+  }
+  .black{
+    color: black;
+  }
+
+  .cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+  .btnTop{
+    background: transparent;
+    border: 1px solid rgb(30, 31, 31);
+    padding: 10px 10px;
+    color: rgb(30, 31, 31);
+  }
+  .btnTop:hover{
+    border: 1px solid red;
+    color: red;
+    transition: 0.2s ease-in;
+  }
+  .brand-logo img{
+    width: 275px;
+    margin-left: -9px;
+  }
+
+  /*------------------------------------------------*/
+
+  @media only screen and (max-width: 768px) {
+    #slike-2 {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    h3{
+      font-size: 24px !important;
+      margin: 10px auto !important;
+    }
+    #cover{
+      font-size: 22px;
+    }
+
+    #blabla img{
+      margin: 0;
+      width: 100%;
+    }
+
+    #glavno{
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    hr{
+      margin: 20px auto 0 auto;
+    }
+  }
